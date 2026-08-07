@@ -1,6 +1,7 @@
 services:
   asphyxia-server:
-    image: asphyxia-server
+    image: ghcr.io/davavi02/asphyxia-video-docker:latest
+    # image: asphyxia-server # Buiding an image
     environment:
       - PUID=1000
       - PGID=1000
