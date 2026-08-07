@@ -1,0 +1,13 @@
+services:
+  asphyxia-server:
+    image: asphyxia-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - "8083:8083"
+      - "4399:4399"
+    volumes:
+      - ./asphyxia-server/Server:/opt/asphyxia-server/Server
+      - ./asphyxia-server/Record:/opt/asphyxia-server/Record
+      - ./asphyxia-server/videoplay:/opt/asphyxia-server/Record/video
